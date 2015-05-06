@@ -2,6 +2,3 @@
 .idea/
 node_modules/
 dest/
-
-**/*.js
-**/*.js.map
