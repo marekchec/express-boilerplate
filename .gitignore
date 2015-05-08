@@ -2,4 +2,5 @@
 .idea/
 .settings/
 node_modules/
-dest/
+server/*.js
+server.js
