@@ -1,12 +1,12 @@
-/// <reference path='typings/node/node.d.ts' />
-/// <reference path='typings/express/express.d.ts' />
-/// <reference path='typings/body-parser/body-parser.d.ts' />
-/// <reference path='typings/errorhandler/errorhandler.d.ts' />
+/// <reference path='server/typings/node/node.d.ts' />
+/// <reference path='server/typings/express/express.d.ts' />
+/// <reference path='server/typings/body-parser/body-parser.d.ts' />
+/// <reference path='server/typings/errorhandler/errorhandler.d.ts' />
 
 import express          = require("express");
 import bodyParser       = require("body-parser");
 import errorHandler     = require("errorhandler");
-import AppRoutes        = require('./routes/Routes');
+import AppRoutes        = require('./server/routes/Routes');
 
 class App {
 

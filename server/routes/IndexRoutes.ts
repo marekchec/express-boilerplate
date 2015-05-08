@@ -14,7 +14,7 @@ class IndexRoutes {
      */
     setRoutes(app):void {
         app.get('/', function(req, res) {
-            console.log("Hello world!");
+            res.send('Hello World!!!!');            
         });
     }
 }
