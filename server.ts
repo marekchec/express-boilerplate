@@ -1,11 +1,9 @@
-/// <reference path='server/typings/node/node.d.ts' />
-/// <reference path='server/typings/express/express.d.ts' />
-/// <reference path='server/typings/body-parser/body-parser.d.ts' />
-/// <reference path='server/typings/errorhandler/errorhandler.d.ts' />
+/// <reference path="typings/tsd.d.ts" />
 
-import express          = require("express");
-import bodyParser       = require("body-parser");
-import errorHandler     = require("errorhandler");
+import express          = require('express');
+import bodyParser       = require('body-parser');
+import errorHandler     = require('errorhandler');
+import mongoose         = require('mongoose');
 import AppRoutes        = require('./server/routes/Routes');
 
 class App {
@@ -50,4 +48,5 @@ class App {
     }
 }
 
+mongoose.connect('mongodb://localhost/crm');
 var app = new App();
