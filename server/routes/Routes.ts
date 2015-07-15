@@ -1,4 +1,5 @@
 import IndexRoutes = require('./IndexRoutes');
+import UserRoutes = require('./UserRoutes');
 
 class Routes {
 
@@ -8,6 +9,7 @@ class Routes {
      */
     constructor(app) {
         var indexRoutes = new IndexRoutes(app);
+        var userRoutes  = new UserRoutes(app);
     }
 }
 
