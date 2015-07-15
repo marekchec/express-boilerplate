@@ -17,27 +17,27 @@ declare module "body-parser" {
         /**
          * if deflated bodies will be inflated. (default: true)
          */
-            inflate?: boolean;
+        inflate?: boolean;
         /**
          * maximum request body size. (default: '100kb')
          */
-            limit?: any;
+        limit?: any;
         /**
          * function to verify body content, the parsing can be aborted by throwing an error.
          */
-            verify?: (req: express.Request, res: express.Response, buf: Buffer, encoding: string) => void;
+        verify?: (req: express.Request, res: express.Response, buf: Buffer, encoding: string) => void;
         /**
          * only parse objects and arrays. (default: true)
          */
-            strict?: boolean;
+        strict?: boolean;
         /**
          * passed to JSON.parse().
          */
-            receiver?: (key: string, value: any) => any;
+        receiver?: (key: string, value: any) => any;
         /**
          * parse extended syntax with the qs module. (default: true)
          */
-            extended?: boolean;
+        extended?: boolean;
     }): express.RequestHandler;
 
     module bodyParser {
@@ -45,94 +45,94 @@ declare module "body-parser" {
             /**
              * if deflated bodies will be inflated. (default: true)
              */
-                inflate?: boolean;
+            inflate?: boolean;
             /**
              * maximum request body size. (default: '100kb')
              */
-                limit?: any;
+            limit?: any;
             /**
              * request content-type to parse, passed directly to the type-is library. (default: 'json')
              */
-                type?: any;
+            type?: any;
             /**
              * function to verify body content, the parsing can be aborted by throwing an error.
              */
-                verify?: (req: express.Request, res: express.Response, buf: Buffer, encoding: string) => void;
+            verify?: (req: express.Request, res: express.Response, buf: Buffer, encoding: string) => void;
             /**
              * only parse objects and arrays. (default: true)
              */
-                strict?: boolean;
+            strict?: boolean;
             /**
              * passed to JSON.parse().
              */
-                receiver?: (key: string, value: any) => any;
+            receiver?: (key: string, value: any) => any;
         }): express.RequestHandler;
 
         export function raw(options?: {
             /**
              * if deflated bodies will be inflated. (default: true)
              */
-                inflate?: boolean;
+            inflate?: boolean;
             /**
              * maximum request body size. (default: '100kb')
              */
-                limit?: any;
+            limit?: any;
             /**
              * request content-type to parse, passed directly to the type-is library. (default: 'application/octet-stream')
              */
-                type?: any;
+            type?: any;
             /**
              * function to verify body content, the parsing can be aborted by throwing an error.
              */
-                verify?: (req: express.Request, res: express.Response, buf: Buffer, encoding: string) => void;
+            verify?: (req: express.Request, res: express.Response, buf: Buffer, encoding: string) => void;
         }): express.RequestHandler;
 
         export function text(options?: {
             /**
              * if deflated bodies will be inflated. (default: true)
              */
-                inflate?: boolean;
+            inflate?: boolean;
             /**
              * maximum request body size. (default: '100kb')
              */
-                limit?: any;
+            limit?: any;
             /**
              * request content-type to parse, passed directly to the type-is library. (default: 'text/plain')
              */
-                type?: any;
+            type?: any;
             /**
              * function to verify body content, the parsing can be aborted by throwing an error.
              */
-                verify?: (req: express.Request, res: express.Response, buf: Buffer, encoding: string) => void;
+            verify?: (req: express.Request, res: express.Response, buf: Buffer, encoding: string) => void;
             /**
              * the default charset to parse as, if not specified in content-type. (default: 'utf-8')
              */
-                defaultCharset?: string;
+            defaultCharset?: string;
         }): express.RequestHandler;
 
         export function urlencoded(options?: {
             /**
              * if deflated bodies will be inflated. (default: true)
              */
-                inflate?: boolean;
+            inflate?: boolean;
             /**
              * maximum request body size. (default: '100kb')
              */
-                limit?: any;
+            limit?: any;
             /**
              * request content-type to parse, passed directly to the type-is library. (default: 'urlencoded')
              */
-                type?: any;
+            type?: any;
             /**
              * function to verify body content, the parsing can be aborted by throwing an error.
              */
-                verify?: (req: express.Request, res: express.Response, buf: Buffer, encoding: string) => void;
+            verify?: (req: express.Request, res: express.Response, buf: Buffer, encoding: string) => void;
             /**
              * parse extended syntax with the qs module. (default: true)
              */
-                extended?: boolean;
+            extended?: boolean;
         }): express.RequestHandler;
     }
 
-export = bodyParser;
+    export = bodyParser;
 }

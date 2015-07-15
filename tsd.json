@@ -1,0 +1,36 @@
+{
+  "version": "v4",
+  "repo": "borisyankov/DefinitelyTyped",
+  "ref": "master",
+  "path": "typings",
+  "bundle": "typings/tsd.d.ts",
+  "installed": {
+    "express/express.d.ts": {
+      "commit": "2c96e9e77765b72ce43ab8163f42e504f3e2facb"
+    },
+    "node/node.d.ts": {
+      "commit": "2c96e9e77765b72ce43ab8163f42e504f3e2facb"
+    },
+    "serve-static/serve-static.d.ts": {
+      "commit": "2c96e9e77765b72ce43ab8163f42e504f3e2facb"
+    },
+    "mime/mime.d.ts": {
+      "commit": "2c96e9e77765b72ce43ab8163f42e504f3e2facb"
+    },
+    "body-parser/body-parser.d.ts": {
+      "commit": "2c96e9e77765b72ce43ab8163f42e504f3e2facb"
+    },
+    "errorhandler/errorhandler.d.ts": {
+      "commit": "2c96e9e77765b72ce43ab8163f42e504f3e2facb"
+    },
+    "method-override/method-override.d.ts": {
+      "commit": "2c96e9e77765b72ce43ab8163f42e504f3e2facb"
+    },
+    "mongodb/mongodb.d.ts": {
+      "commit": "2c96e9e77765b72ce43ab8163f42e504f3e2facb"
+    },
+    "mongoose/mongoose.d.ts": {
+      "commit": "2c96e9e77765b72ce43ab8163f42e504f3e2facb"
+    }
+  }
+}

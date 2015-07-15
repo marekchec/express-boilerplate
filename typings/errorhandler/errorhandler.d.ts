@@ -8,5 +8,5 @@
 declare module "errorhandler" {
     import express = require('express');
     function e(options?: {log?: any}): express.ErrorRequestHandler;
-export = e;
+    export = e;
 }
