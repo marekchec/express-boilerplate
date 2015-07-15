@@ -2,8 +2,7 @@
 import UserController = require('../controllers/UserController');
 
 class UserRoutes {
-
-//    userController: UserController;
+    
     /**
      * Constructor
      * @param app
